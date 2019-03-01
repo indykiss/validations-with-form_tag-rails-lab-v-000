@@ -28,8 +28,7 @@
   <% end %>
     <%= label_tag "category", "Category" %>
     <h3>Must be either "Fiction" or "Non-Fiction".</h3>
-    <%= text_field_tag "category", @post.category %>
-  </div>
+    <%= text_field_tag "category", @post.category %></div>
 
   <% if @post.errors[:content].empty? %>
       <div class="field">
@@ -37,8 +36,7 @@
       <div class="field_with_errors">
   <% end %>
     <%= label_tag "content", "Content" %>
-    <%= text_area_tag "content", @post.content %>
-  </div>
+    <%= text_area_tag "content", @post.content %></div>
   <%= submit_tag "Update" %>
 
 <% end %>
