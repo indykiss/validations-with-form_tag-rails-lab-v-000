@@ -20,7 +20,7 @@
      <%= text_field_tag "title", @post.title %>
     </div>
 
-    <% if @post.errors[:category].empty? %>
+  <% if @post.errors[:category].empty? %>
      <div class="field">
    <% else %>
      <div class="field_with_errors">
