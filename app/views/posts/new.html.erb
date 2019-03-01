@@ -3,7 +3,7 @@
 <%= form_tag posts_path, method: "post" do %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
-      There were some errors:
+      Here's your errors:
       <ul>
         <% @post.errors.full_messages.each do |message| %>
           <li><%= message %></li>
