@@ -1,4 +1,3 @@
-<h2>Editing "<%= @post.title %>"</h2>
 <%= form_tag post_path(@post), method: "patch" do %>
 
   <% if @post.errors.any? %>
