@@ -26,8 +26,7 @@
 <% end %>
 
   <%= label_tag "email", "Email" %>
-    <%= text_field_tag "email", @author.email %>
-</div>
+    <%= text_field_tag "email", @author.email %></div>
 
   <% if @author.errors[:phone_number].empty? %>
       <div class="field">
