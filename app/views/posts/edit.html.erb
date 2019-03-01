@@ -13,9 +13,9 @@
   <% end %>
 
   <% if @post.errors[:title].empty? %>
-    <div class="field">
-  <% else %>
-    <div class="field_with_errors">
+      <div class="field">
+    <% else %>
+      <div class="field_with_errors">
   <% end %>
     <%= label_tag "title", "Title" %>
     <%= text_field_tag "title", @post.title %>
