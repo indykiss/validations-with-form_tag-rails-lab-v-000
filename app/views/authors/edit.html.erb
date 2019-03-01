@@ -1,4 +1,4 @@
-<h2>Editing "<%= @author.name %>"</h2>
+
 <%= form_tag(author_path(@author), method: :patch) do %>
   <% if @author.errors.any? %>
     <div id="error_explanation">
@@ -10,7 +10,6 @@
       </ul>
     </div>
   <% end %>
-
 
   <div class="field<%= ' field_with_errors' if @author.errors[:name].any? %>">
     <%= label_tag "name", "Name" %>
