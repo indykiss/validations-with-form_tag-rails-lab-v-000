@@ -2,11 +2,10 @@ class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update]
 
   def show
-    @post = Post.find(params[:id])
   end
 
   def edit
-    @post = Post.find(params[:id])
+    @post = Post.new
   end
 
   def update
