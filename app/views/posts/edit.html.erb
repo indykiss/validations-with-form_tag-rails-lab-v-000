@@ -29,7 +29,6 @@
     <%= label_tag "category", "Category" %>
     <h3>Must be either "Fiction" or "Non-Fiction".</h3>
     <%= text_field_tag "category", @post.category %>
-    </p>
   </div>
 
   <% if @post.errors[:content].empty? %>
