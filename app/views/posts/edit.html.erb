@@ -22,9 +22,9 @@
   </div>
 
   <% if @post.errors[:category].empty? %>
-    <div class="field">
-  <% else %>
-    <div class="field_with_errors">
+      <div class="field">
+    <% else %>
+      <div class="field_with_errors">
   <% end %>
     <%= label_tag "category", "Category" %>
     <p>Must be either "Fiction" or "Non-Fiction".</p>
