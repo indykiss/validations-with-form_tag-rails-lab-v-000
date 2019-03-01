@@ -18,8 +18,7 @@
     <div class="field_with_errors">
   <% end %>
     <%= label_tag "title", "Name" %>
-    <%= text_field_tag "title", @post.title %>
-  </div>
+    <%= text_field_tag "title", @post.title %></div>
 
   <% if @post.errors[:category].empty? %>
       <div class="field">
