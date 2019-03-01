@@ -1,4 +1,7 @@
 class AuthorsController < ApplicationController
+
+  before_action :set_author, only: %i[show edit update]
+  
   def show
     @author = Author.find(params[:id])
   end
@@ -8,16 +11,10 @@ class AuthorsController < ApplicationController
   end
 
   def create
-    @author = Author.new(author_params)
+    @author = Author.create(author_params)
 
-    if @author.valid?
-      redirect_to author_path(@author)
-        else
-          render :new
-    end
+    redirect_to author_path(@author)
   end
-
-
 
   private
 
